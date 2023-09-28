@@ -24,50 +24,50 @@
 
       <div class="container-ep">
 
+      
+ 
        <div class="images d-flex flex-row ">
-          <div class="group-images position-relative title">
-           <img :src="images[counter]">
-          </div>
-          
+            <div class="group-images position-relative title">
+             <img class="thumb" v-for="(img,index) in images"  :class="{'active': index==counter}" :src="img.image">
+            </div> 
 
-         <div class="canva-images bg-black">
-       
-          <div class="canva1 bordo">
-            <img 
-            class="thumb"
-            v-for="(image, index) in images"
-            src="image">
-            <div class="black-canva"></div>
-          </div>
-          <div class="canva2 bordo">
-            <div class="black-canva"></div>
-          </div>
-          <div class="canva3 bordo">
-            <div class="black-canva"></div>
-          </div>
-          <div class="canva4 bordo">
-            <div class="black-canva"></div>
-          </div>
-          <div class="canva5 bordo">
-            <div class="black-canva">
-
-          </div>
-        </div>
-
-
-
-          <div class="btn-arrow top"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></div>
-          <div class="btn-arrow down"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></div>
-        </div>
+          <div class="canva-images bg-black">
+            <!-- <img class="thumb" v-for="(image, index) in images"
+            :class="('active' index === counter)"
+            :src="image">  -->
       
+
+            <div class="canva1 bordo">
+            
+              <div class="black-canva"></div>
+            </div>
+            <div class="canva2 bordo">
+              <div class="black-canva"></div>
+            </div>
+            <div class="canva3 bordo">
+              <div class="black-canva"></div>
+            </div>
+            <div class="canva4 bordo">
+              <div class="black-canva"></div>
+            </div>
+            <div class="canva5 bordo">
+              <div class="black-canva">
+
+            </div> 
+            </div>
+
+
+
+            <div class="btn-arrow top"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></div>
+            <div class="btn-arrow down"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></div>
+          </div>
+        </div>
       </div>
-      
     </div>
-  </div>
-  </div>
-
-    
   
+  </div>
+ 
+
   
 
   <script src="script.js"></script>
