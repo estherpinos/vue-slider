@@ -129,3 +129,11 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.thumb{
+  display: none;
+}
+
+.active{
+  display: block;
+}
