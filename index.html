@@ -28,7 +28,7 @@
  
        <div class="images d-flex flex-row ">
             <div class="group-images position-relative title">
-             <img class="thumb" v-for="(img,index) in images"  :class="{'active': index==counter}" :src="img.image">
+              <img class="thumb" v-for="(img,index) in images"  :class="{'active': index==counter}" :src="img.image">
             </div> 
 
           <div class="canva-images bg-black">
@@ -37,8 +37,8 @@
             :src="image">  -->
       
 
-            <div class="canva1 bordo">
-            
+            <div @click="" class="canva1 bordo">
+          
               <div class="black-canva"></div>
             </div>
             <div class="canva2 bordo">
@@ -58,8 +58,8 @@
 
 
 
-            <div class="btn-arrow top"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></div>
-            <div class="btn-arrow down"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></div>
+            <div @click="arrowtop()" class="btn-arrow top"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></div>
+            <div @click="arrowdown()" class="btn-arrow down"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></div>
           </div>
         </div>
       </div>

@@ -33,6 +33,23 @@ createApp({
   },
   methods:{
 
+    arrowtop(){
+      console.log('ciao');
+      this.counter--;
+      if(this.counter==-1){
+        this.counter=4;
+      }
+      
+    },
+
+    arrowdown(){
+      this.counter++;
+      if(this.counter==5){
+        this.counter=0;
+      }
+      
+    }
+
   },
   mounted(){
     console.log("montato");
