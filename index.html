@@ -37,19 +37,19 @@
             :src="image">  -->
       
 
-            <div @click="" class="canva1 bordo">
-              <div :class="{'black-canva': counter!=0}"></div>
+            <div @click="" class="canva1" :class="{'bordo': counter==0}">
+              <div :class="{'black-canva': counter!=0, }"></div>
             </div>
-            <div class="canva2 bordo">
+            <div class="canva2 " :class="{'bordo': counter==1}">
               <div :class="{'black-canva': counter!=1}"></div>
             </div>
-            <div class="canva3 bordo">
+            <div class="canva3" :class="{'bordo': counter==2}">
               <div :class="{'black-canva': counter!=2}"></div>
             </div>
-            <div class="canva4 bordo">
+            <div class="canva4" :class="{'bordo': counter==3}">
               <div :class="{'black-canva': counter!=3}"></div>
             </div>
-            <div class="canva5 bordo">
+            <div class="canva5" :class="{'bordo': counter==4}">
               <div :class="{'black-canva': counter!=4}">
 
             </div> 

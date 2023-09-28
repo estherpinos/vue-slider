@@ -137,3 +137,7 @@
 .active{
   display: block;
 }
+
+.bordo{
+  border: 2px solid white;
+}
