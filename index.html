@@ -29,6 +29,9 @@
        <div class="images d-flex flex-row ">
             <div class="group-images position-relative title">
               <img class="thumb" v-for="(img,index) in images"  :class="{'active': index==counter}" :src="img.image">
+
+              <h2  v-for="(img,index) in images" class=" title-cards position-absolute text-white thumb" :class="{'active': index==counter}">{{img.title}}</h2>
+              <p v-for="(img,index) in images" class=" text-cards position-absolute text-white thumb" :class="{'active': index==counter}">{{img.text}}</p>
             </div> 
 
           <div class="canva-images bg-black">
