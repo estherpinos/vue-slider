@@ -19,27 +19,24 @@
 </head>
 <body>
 
-  <div id="app"></div>
+  <div id="app">
+    <div class="wrapper">
 
-  <div class="wrapper">
+      <div class="container-ep">
 
-    <div class="container-ep">
-
-      <div class="images d-flex flex-row ">
-        <div class="group-images position-relative ">
+       <div class="images d-flex flex-row ">
+          <div class="group-images position-relative title">
+           <img :src="images[counter]">
+          </div>
           
 
-
-
-
-
-
-
-
-          
-        </div>
-        <div class="canva-images bg-black">
+         <div class="canva-images bg-black">
+       
           <div class="canva1 bordo">
+            <img 
+            class="thumb"
+            v-for="(image, index) in images"
+            src="image">
             <div class="black-canva"></div>
           </div>
           <div class="canva2 bordo">
@@ -54,7 +51,8 @@
           <div class="canva5 bordo">
             <div class="black-canva">
 
-          </div></div>
+          </div>
+        </div>
 
 
 
@@ -66,10 +64,13 @@
       
     </div>
   </div>
+  </div>
+
+    
   
   
 
   <script src="script.js"></script>
 </body>
 </html>
-  <script src="script.js"></script>
+
